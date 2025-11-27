@@ -1,0 +1,425 @@
+.footer {
+
+    &__running-line-wrapper {
+        overflow: hidden;
+        width: 100%;
+        padding: 50px 0;
+        border-top: 2px dashed #262626;
+    }
+
+    &__running-line {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        white-space: nowrap;
+        animation: running-animation 20s linear infinite;
+        flex-shrink: 0;
+    }
+
+    &__running-line p {
+        @include font(#333333, 30px, 400);
+        font-family: Roboto;
+    }
+
+    @keyframes running-animation {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    &__logo {
+
+        border-top: 2px dashed #262626;
+        border-bottom: 2px dashed #262626;
+        padding: 100px 0 100px 0;
+
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .big-logo {
+                width: 788px;
+                height: 146px;
+            }
+        }
+
+        &-socials {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .socials-social {
+                padding: 16px;
+                background-color: #D6CDC2;
+                border-radius: 12px;
+            }
+        }
+
+    }
+
+    &__nav {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        border-bottom: 2px dashed #262626;
+
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .home {
+
+                h4 {
+                    @include font(#FFFFFF, 22px, 500);
+                    font-family: Roboto;
+                    margin-bottom: 30px;
+                }
+
+                &-p {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    p {
+                        @include font(#676665, 20px, 400);
+                        font-family: Roboto-Mono;
+                    }
+
+                    .point {
+                        width: 4px;
+                        height: 4px;
+                        background-color: #262626;
+                        border-radius: 2px;
+
+                    }
+                }
+            }
+
+            .products {
+
+                h4 {
+                    @include font(#FFFFFF, 22px, 500);
+                    font-family: Roboto;
+                    margin-bottom: 30px;
+                }
+
+            }
+
+            form {
+
+                label {
+                    @include font(#FFFFFF, 22px, 500);
+                    font-family: Roboto;
+                }
+
+                button {
+                    margin-top: 30px;
+                    width: 479px;
+                    padding: 18px 24px;
+                    border: 0px;
+                    border-radius: 12px;
+                    background-color: #1A1A1A;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input {
+                        @include font(#676665, 18px, 400);
+                        font-family: Roboto-Mono;
+                        background-color: #1A1A1A;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__info {
+        padding: 50px 0;
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                @include font(#81807E, 18px, 400);
+                font-family: Roboto-Mono;
+            }
+        }
+
+        &-policy {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+
+            .line {
+                width: 1px;
+                height: 27px;
+                background-color: #262626;
+            }
+        }
+
+
+    }
+
+}
+
+
+@media (max-width: 1440px) {
+    .footer {
+
+        &-logo {
+            padding: 100px 0 100px 0;
+
+            .big-logo {
+                width: 788px;
+                height: 146px;
+            }
+
+            &-socials {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .socials-social {
+                    padding: 16px;
+                    background-color: #D6CDC2;
+                    border-radius: 12px;
+                }
+            }
+        }
+
+        &-nav {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            .home {
+
+                h4 {
+                    @include font(#FFFFFF, 18px, 500);
+                    font-family: Roboto;
+                    margin-bottom: 30px;
+                }
+
+                &-p {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    p {
+                        @include font(#676665, 16px, 400);
+                        font-family: Roboto-Mono;
+                    }
+
+                    .point {
+                        width: 4px;
+                        height: 4px;
+                        background-color: #262626;
+                        border-radius: 2px;
+
+                    }
+                }
+            }
+
+            .products {
+
+                h4 {
+                    @include font(#FFFFFF, 18px, 500);
+                    font-family: Roboto;
+                    margin-bottom: 30px;
+                }
+
+            }
+
+            form {
+
+                label {
+                    @include font(#FFFFFF, 18px, 500);
+                    font-family: Roboto;
+                }
+
+                button {
+                    margin-top: 30px;
+                    width: 479px;
+                    padding: 18px 24px;
+                    border: 0px;
+                    border-radius: 12px;
+                    background-color: #1A1A1A;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input {
+                        @include font(#676665, 16px, 400);
+                        font-family: Roboto-Mono;
+                        background-color: #1A1A1A;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+
+            p {
+                @include font(#81807E, 16px, 400);
+                font-family: Roboto-Mono;
+            }
+
+            &-policy {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+
+                .line {
+                    width: 1px;
+                    height: 27px;
+                    background-color: #262626;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .footer {
+
+        &-logo {
+            padding: 100px 0 100px 0;
+
+            .big-logo {
+                width: 500px;
+                height: 146px;
+            }
+
+            &-socials {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .socials-social {
+                    padding: 16px;
+                    background-color: #D6CDC2;
+                    border-radius: 12px;
+                }
+            }
+        }
+
+        &-nav {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            .home {
+
+                h4 {
+                    @include font(#FFFFFF, 16px, 500);
+                    font-family: Roboto;
+                    margin-bottom: 30px;
+                }
+
+                &-p {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    p {
+                        @include font(#676665, 14px, 400);
+                        font-family: Roboto-Mono;
+                    }
+
+                    .point {
+                        width: 4px;
+                        height: 4px;
+                        background-color: #262626;
+                        border-radius: 2px;
+
+                    }
+                }
+            }
+
+            .products {
+
+                h4 {
+                    @include font(#FFFFFF, 16px, 500);
+                    font-family: Roboto;
+                    margin-bottom: 30px;
+                }
+
+            }
+
+            form {
+
+                label {
+                    @include font(#FFFFFF, 16px, 500);
+                    font-family: Roboto;
+                }
+
+                button {
+                    margin-top: 30px;
+                    width: 350px;
+                    padding: 18px 24px;
+                    border: 0px;
+                    border-radius: 12px;
+                    background-color: #1A1A1A;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input {
+                        @include font(#676665, 14px, 400);
+                        font-family: Roboto-Mono;
+                        background-color: #1A1A1A;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+
+            p {
+                @include font(#81807E, 14px, 400);
+                font-family: Roboto-Mono;
+            }
+
+            &-policy {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+
+                .line {
+                    width: 1px;
+                    height: 27px;
+                    background-color: #262626;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 390px) {
+
+    .container {
+        width: 358px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Roboto-Mono;
+    src: url(../../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url(../../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@import 'mixins';
+
+body{
+    background-color: #0F0F0F;
+    overflow-x: hidden;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mistake{
+    padding: 200px 0 200px;
+
+    h1{
+         @include font(#FFFFFF, 200px, 500);
+         font-family: Roboto;
+         text-align: center;
+    }
+}
+
+
+@import './blocks/_header';
+@import './blocks/_main';
+@import './blocks/_trends';
+@import './blocks/_advantages';
+@import './blocks/_collections';
+@import './blocks/_reviews';
+@import './blocks/_questions';
+@import './blocks/_baner';
+@import './blocks/_footer';
+
+
+@media (max-width: 1440px) {
+    .container{
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .container{
+        width: 864px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .container{
+        width: 358px;
+        margin: 0 auto;
+    }
+}
+
+
+
+

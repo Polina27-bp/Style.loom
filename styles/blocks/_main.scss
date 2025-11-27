@@ -1,0 +1,289 @@
+.main {
+    margin: 60px 0 100px 0;
+
+    &__baner {
+        background: url('../../images/main.png') center no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        height: 624px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        button {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 18px 24px;
+            background-color: #1F1F1F;
+            border: 2px dashed #404040;
+            border-radius: 12px;
+            position: absolute;
+            bottom: -40px;
+
+            p {
+                @include font(#FFFFFF, 18px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__text {
+        padding: 80px;
+        width: 638px;
+        border-bottom: 2px dashed #262626;
+        border-left: 2px dashed #262626;
+        border-right: 2px dashed #262626;
+        border-radius: 0 0 0 20px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 30px;
+
+        .button {
+            background-color: #0F0F0F;
+            border: 2px dashed #333333;
+            border-radius: 12px;
+            padding: 18px 24px;
+
+            p {
+                @include font(#B3B3B2, 18px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+
+    h1 {
+        @include font(#FFFFFF, 48px, 500);
+        font-family: Roboto;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    p {
+        @include font(#676665, 18px, 400);
+        font-family: Roboto;
+    }
+
+    &__result {
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr;
+
+        &-item {
+            border: 2px dashed #262626;
+            padding: 70px 130px 50px 50px;
+
+            h2 {
+                @include font(#FFFFFF, 50px, 500);
+                font-family: Roboto;
+                margin-bottom: 16px;
+            }
+
+            p {
+                @include font(#676665, 18px, 400);
+                font-family: Roboto;
+            }
+        }
+
+        &-item--dif {
+            border-radius: 0 0 20px 0;
+        }
+
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .main {
+        &__baner {
+            button {
+                p {
+                    @include font(#FFFFFF, 16px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        &__menu {
+            .button {
+                p {
+                    @include font(#B3B3B2, 16px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        h1 {
+            @include font(#FFFFFF, 38px, 500);
+            font-family: Roboto;
+        }
+
+        p {
+            @include font(#676665, 16px, 400);
+            font-family: Roboto;
+        }
+
+        &__result {
+            &-item {
+                h2 {
+                    @include font(#FFFFFF, 34px, 500);
+                    font-family: Roboto;
+                }
+
+                p {
+                    @include font(#676665, 16px, 400);
+                    font-family: Roboto;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .main {
+        &__baner {
+            button {
+                p {
+                    @include font(#FFFFFF, 16px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        &__text {
+            padding: 80px 30px 30px 30px;
+        }
+
+        &__menu {
+            .button {
+                p {
+                    @include font(#B3B3B2, 14px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        h1 {
+            @include font(#FFFFFF, 32px, 500);
+            font-family: Roboto;
+        }
+
+        p {
+            @include font(#676665, 14px, 400);
+            font-family: Roboto;
+        }
+
+
+        &__result {
+
+            &-item {
+                padding: 70px 100px 50px 30px;
+
+                h2 {
+                    @include font(#FFFFFF, 30px, 500);
+                    font-family: Roboto;
+                }
+
+                p {
+                    @include font(#676665, 14px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 390px) {
+
+    .main {
+
+        &__baner {
+            height: 272px;
+            width: 358px;
+
+            button {
+                padding: 10px 20px;
+
+                p {
+                    @include font(#FFFFFF, 14px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__text {
+            padding: 80px 11px 30px 11px;
+            width: 638px;
+        }
+
+        &__menu {
+
+            .button {
+                padding: 12px 18px;
+
+                p {
+                    @include font(#B3B3B2, 14px, 400);
+                    font-family: Roboto;
+                }
+
+                .row {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+
+        h1 {
+            @include font(#FFFFFF, 32px, 500);
+            font-family: Roboto;
+        }
+
+        p {
+            @include font(#676665, 14px, 400);
+            font-family: Roboto;
+        }
+
+
+        &__result {
+            display: grid;
+            grid: 1fr 1fr / 1fr 1fr;
+
+            &-item {
+                border: 2px dashed #262626;
+                padding: 30px;
+
+                h2 {
+                    @include font(#FFFFFF, 30px, 500);
+                    font-family: Roboto;
+                }
+
+                p {
+                    @include font(#676665, 14px, 400);
+                    font-family: Roboto;
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,197 @@
+.trends {
+    margin-bottom: 100px;
+
+    &__text {
+        padding: 80px 0px 80px 80px;
+        border: 2px dashed #262626;
+        border-radius: 20px 20px 0px 0px;
+
+        h2 {
+            @include font(#ffffff, 48px, 500);
+            font-family: Roboto;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        p {
+            @include font(#676665, 18px, 400);
+            font-family: Roboto;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr 1fr;
+
+        &-item {
+            width: 532px;
+            border: 2px dashed #262626;
+
+            .item__icon {
+                display: flex;
+                justify-content: space-between;
+
+                .icone {
+                    margin: 60px 0 50px 60px;
+                }
+            }
+
+            .item__text {
+                margin: 0 60px 60px 60px;
+
+                h3 {
+                    @include font(#FFFFFF, 24px, 500);
+                    font-family: Roboto;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    @include font(#81807E, 18px, 400);
+                    font-family: Roboto;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@media (max-width: 1440px) {
+    .trends {
+
+        &__text {
+            padding: 60px 0px 60px 60px;
+
+            h2 {
+                @include font(#ffffff, 38px, 500);
+            }
+
+            p {
+                @include font(#676665, 16px, 400);
+            }
+        }
+
+        &__items {
+
+            &-item {
+                width: 423px;
+
+                .item__icon {
+
+                    .icone {
+                        margin: 50px 0 40px 50px;
+                    }
+                }
+
+                .item__text {
+
+                    h3 {
+                        @include font(#FFFFFF, 20px, 500);
+                    }
+
+                    p {
+                        @include font(#81807E, 16px, 400);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .trends {
+
+        &__text {
+            padding: 60px 0px 60px 60px;
+
+            h2 {
+                @include font(#ffffff, 38px, 500);
+            }
+
+            p {
+                @include font(#676665, 16px, 400);
+            }
+        }
+
+        &__items {
+            display: grid;
+            grid: 1fr 1fr / 1fr 1fr;
+
+            &-item {
+                width: 429px;
+
+                .item__icon {
+
+                    .icone {
+                        margin: 50px 0 40px 50px;
+                    }
+                }
+
+                .item__text {
+
+                    h3 {
+                        @include font(#FFFFFF, 20px, 500);
+                    }
+
+                    p {
+                        @include font(#81807E, 16px, 400);
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .trends {
+
+        &__text {
+            padding: 30px 20px;
+
+            h2 {
+                @include font(#ffffff, 38px, 500);
+            }
+
+            p {
+                @include font(#676665, 16px, 400);
+            }
+        }
+
+        &__items {
+            display: grid;
+            grid: 1fr 1fr/ 1fr;
+
+            &-item {
+                width: 358px;
+
+                .item__icon {
+
+                    .icone {
+                        margin: 30px 0 40px 30px;
+                    }
+                }
+
+                .item__text {
+                    margin: 0 60px 60px 30px;
+
+                    h3 {
+                        @include font(#FFFFFF, 20px, 500);
+                    }
+
+                    p {
+                        @include font(#81807E, 16px, 400);
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,347 @@
+.reviews {
+    border: 2px dashed #262626;
+    border-radius: 20px;
+    margin-bottom: 100px;
+
+    &__content {
+        padding-left: 80px;
+        border-bottom: 2px dashed #262626;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    &__text {
+
+        h2 {
+            @include font(#FFFFFF, 48px, 500);
+            font-family: Roboto;
+            text-transform: uppercase;
+            margin: 80px 0px 30px 0px;
+
+        }
+
+        p {
+            @include font(#676665, 18px, 400);
+            font-family: Roboto;
+        }
+    }
+
+    &__items {
+
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    &__item {
+        padding: 60px;
+        border-right: 2px dashed #262626;
+        border-bottom: 2px dashed #262626;
+
+        .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            &-discript {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .face {
+                    margin-right: 12px;
+                }
+
+                .user-name {
+
+                    h6 {
+                        @include font(#FFFFFF, 20px, 500);
+                        font-family: Roboto;
+                        margin-bottom: 4px;
+                    }
+
+                    p {
+                        @include font(#676665, 18px, 400);
+                        font-family: Roboto-Mono;
+                    }
+                }
+            }
+
+        }
+
+        .stars {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            @include font(#81807E, 18px, 400);
+            font-family: Roboto;
+        }
+    }
+    
+}
+
+@media (max-width: 1440px){
+   .reviews {
+    border: 2px dashed #262626;
+    border-radius: 20px;
+    margin-bottom: 100px;
+
+    &-content {
+        padding-left: 80px;
+        border-bottom: 2px dashed #262626;
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+
+            h2 {
+                @include font(#FFFFFF, 46px, 500);
+                font-family: Roboto;
+                text-transform: uppercase;
+                margin: 80px 0px 30px 0px;
+
+            }
+
+            p {
+                @include font(#676665, 16px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+
+    &-items {
+
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr 1fr;
+
+        &-item {
+            padding: 60px;
+            border-right: 2px dashed #262626;
+            border-bottom: 2px dashed #262626;
+
+            .user {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 40px;
+
+                &-discript {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .face {
+                        margin-right: 12px;
+                    }
+
+                    .user-name {
+
+                        h6 {
+                            @include font(#FFFFFF, 18px, 500);
+                            font-family: Roboto;
+                            margin-bottom: 4px;
+                        }
+
+                        p {
+                            @include font(#676665, 16px, 400);
+                            font-family: Roboto-Mono;
+                        }
+                    }
+                }
+
+            }
+
+            .stars {
+                display: flex;
+                gap: 5px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                @include font(#81807E, 16px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+}
+}
+
+
+
+@media (max-width: 1024px) {
+ .reviews {
+    border: 2px dashed #262626;
+    border-radius: 20px;
+    margin-bottom: 100px;
+
+    &-content {
+        padding-left: 80px;
+        border-bottom: 2px dashed #262626;
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+
+            h2 {
+                @include font(#FFFFFF, 38px, 500);
+                font-family: Roboto;
+                text-transform: uppercase;
+                margin: 80px 0px 30px 0px;
+
+            }
+
+            p {
+                @include font(#676665, 14px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+
+    &-items {
+
+        display: grid;
+        grid: 1fr 1fr / 1fr 1fr;
+
+        &-item {
+            padding: 60px;
+            border-right: 2px dashed #262626;
+            border-bottom: 2px dashed #262626;
+
+            .user {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 40px;
+
+                &-discript {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .face {
+                        margin-right: 12px;
+                    }
+
+                    .user-name {
+
+                        h6 {
+                            @include font(#FFFFFF, 16px, 500);
+                            font-family: Roboto;
+                            margin-bottom: 4px;
+                        }
+
+                        p {
+                            @include font(#676665, 14px, 400);
+                            font-family: Roboto-Mono;
+                        }
+                    }
+                }
+
+            }
+
+            .stars {
+                display: flex;
+                gap: 5px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                @include font(#81807E, 14px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+}
+   
+}
+
+@media (max-width: 390px) {
+
+    .reviews {
+    border: 2px dashed #262626;
+    border-radius: 20px;
+    margin-bottom: 100px;
+
+    &-content {
+        padding-left: 20px;
+        border-bottom: 2px dashed #262626;
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+
+            h2 {
+                @include font(#FFFFFF, 38px, 500);
+                font-family: Roboto;
+                text-transform: uppercase;
+                margin: 80px 0px 30px 0px;
+
+            }
+
+            p {
+                @include font(#676665, 14px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+
+    &-items {
+
+        display: grid;
+        grid: 1fr 1fr / 1fr;
+
+        &-item {
+            padding: 60px;
+            border-right: 2px dashed #262626;
+            border-bottom: 2px dashed #262626;
+
+            .user {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 40px;
+
+                &-discript {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .face {
+                        margin-right: 12px;
+                    }
+
+                    .user-name {
+
+                        h6 {
+                            @include font(#FFFFFF, 16px, 500);
+                            font-family: Roboto;
+                            margin-bottom: 4px;
+                        }
+
+                        p {
+                            @include font(#676665, 14px, 400);
+                            font-family: Roboto-Mono;
+                        }
+                    }
+                }
+
+            }
+
+            .stars {
+                display: flex;
+                gap: 5px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                @include font(#81807E, 14px, 400);
+                font-family: Roboto;
+            }
+        }
+    }
+}
+}
