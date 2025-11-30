@@ -1,4 +1,4 @@
-.baner{
+.baner {
     margin-bottom: 100px;
     padding: 100px 209px 100px 100px;
     background-color: #C2B4A3;
@@ -11,22 +11,22 @@
     align-items: center;
     justify-content: space-between;
 
-    &__text{
+    &__text {
 
-        h2{
+        h2 {
             @include font(#0F0F0F, 58px, 500);
             font-family: Roboto;
             margin-bottom: 16px;
             text-transform: uppercase;
         }
 
-        p{
+        p {
             @include font(#1F1F1F, 18px, 400);
             font-family: Roboto;
         }
     }
 
-    &__button{
+    &__button {
         padding: 18px 24px;
         background-color: #1F1F1F;
         border-radius: 12px;
@@ -34,7 +34,7 @@
         align-items: center;
         gap: 4px;
 
-        p{
+        p {
             @include font(#FFFFFF, 18px, 400);
             font-family: Roboto;
         }
@@ -45,85 +45,83 @@
 
 
 @media (max-width: 1440px) {
-    .baner{
-    
-    padding: 100px 130px 100px 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .baner {
+        padding: 100px 130px 100px 70px;
+        background-size: 40% auto;
 
-    &-text{
+        &__text {
 
-        h2{
-            @include font(#0F0F0F, 48px, 500);
-            font-family: Roboto;
-            margin-bottom: 16px;
-            text-transform: uppercase;
+            h2 {
+                @include font(#0F0F0F, 48px, 500);
+            }
+
+            p {
+                @include font(#1F1F1F, 16px, 400);
+            }
         }
 
-        p{
-            @include font(#1F1F1F, 16px, 400);
-            font-family: Roboto;
+        &__button {
+            p {
+                @include font(#FFFFFF, 16px, 400);
+            }
         }
     }
-
-    button{
-        padding: 18px 24px;
-        background-color: #1F1F1F;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-
-        p{
-            @include font(#FFFFFF, 16px, 400);
-            font-family: Roboto;
-        }
-
-    }
-
-}
 }
 
 
 @media (max-width: 1024px) {
 
-   .baner{
-    
-    padding: 50px 80px 50px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .baner {
+        padding: 50px 80px 50px 30px;
+        background-size: 40% auto;
 
-    &-text{
+        &__text {
 
-        h2{
-            @include font(#0F0F0F, 30px, 500);
-            font-family: Roboto;
-            margin-bottom: 16px;
-            text-transform: uppercase;
+            h2 {
+                @include font(#0F0F0F, 30px, 500);
+            }
+
+            p {
+                @include font(#1F1F1F, 12px, 400);
+            }
         }
 
-        p{
-            @include font(#1F1F1F, 12px, 400);
-            font-family: Roboto;
+        &__button {
+
+            p {
+                @include font(#FFFFFF, 14px, 400);
+            }
         }
     }
-
-    button{
-        padding: 18px 24px;
-        background-color: #1F1F1F;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-
-        p{
-            @include font(#FFFFFF, 14px, 400);
-            font-family: Roboto;
-        }
-
-    }
-
 }
+
+@media (max-width: 390px) {
+
+    .baner {
+        padding: 50px 30px;
+        background-size: 50% auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-position: right top;
+
+        &__text {
+
+            h2 {
+                @include font(#0F0F0F, 30px, 500);
+            }
+
+            p {
+                @include font(#1F1F1F, 12px, 400);
+                margin-bottom: 30px;
+            }
+        }
+
+        &__button {
+            padding: 14px 100px;
+
+            p {
+                @include font(#FFFFFF, 14px, 400);
+            }
+        }
+    }
 }

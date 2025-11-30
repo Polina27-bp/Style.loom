@@ -1,7 +1,7 @@
-.collections{
+.collections {
     margin-bottom: 100px;
 
-    &__content{
+    &__content {
         padding-left: 80px;
         border: 2px dashed #262626;
         border-radius: 20px 20px 0px 0px;
@@ -9,73 +9,73 @@
         justify-content: space-between;
     }
 
-    &__text{
+    &__text {
 
-        h2{
-            @include font( #ffffff, 48px, 500);
+        h2 {
+            @include font(#ffffff, 48px, 500);
             font-family: Roboto;
             text-transform: uppercase;
             margin: 80px 0px 30px 0px;
         }
 
-        .p{
+        .p {
             @include font(#676665, 18px, 400);
             font-family: Roboto;
             margin-bottom: 50px;
         }
     }
 
-    &__menu{
+    &__menu {
         display: flex;
         gap: 14px;
 
-        .button{
+        .button {
             background-color: #0F0F0F;
             border: 2px dashed #333333;
             border-radius: 12px;
             padding: 18px 24px;
 
-            p{
+            p {
                 @include font(#B3B3B2, 18px, 400);
                 font-family: Roboto;
             }
         }
 
-        .button--dif{
+        .button--dif {
             background-color: #C2B4A3;
             border: 2px #C2B4A3;
             padding: 18px 30px;
 
-            p{
+            p {
                 @include font(#0F0F0F, 18px, 400);
             }
         }
     }
-        
 
-    &__items{
+
+    &__items {
         display: grid;
         grid: 1fr 1fr / 1fr 1fr 1fr;
     }
 
-    &__item{
+    &__item {
         padding: 29px;
         border: 2px dashed #262626;
         width: 472px;
 
-        .thing{
+        .thing {
             width: 472px;
             height: 386px;
-            margin-bottom: 30px ;
+            margin-bottom: 30px;
         }
 
-        .item-nav{
+        .item-nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
 
-            .nav-p{
+            .nav-p {
                 @include font(#B3B3B2, 18px, 400);
                 font-family: Roboto;
                 padding: 10px 16px;
@@ -84,7 +84,7 @@
                 background-color: #262626;
             }
 
-            button{
+            button {
                 display: flex;
                 gap: 4px;
                 background-color: #0F0F0F;
@@ -92,45 +92,45 @@
                 border-radius: 12px;
                 padding: 18px 24px;
 
-                p{
+                p {
                     @include font(#ffffff, 18px, 400);
                     font-family: Roboto;
                 }
             }
         }
 
-        .item__text{
+        .item__text {
 
-            h3{
+            h3 {
                 @include font(#ffffff, 24px, 500);
                 font-family: Roboto-Mono;
                 margin-bottom: 14px;
             }
 
-            &-description{
+            &-description {
                 display: flex;
                 gap: 20px;
 
-                .text1{
+                .text1 {
                     display: flex;
                     align-items: center;
                     gap: 8px;
 
-                    p{
-                        @include font( #81807E, 18px, 400);
+                    p {
+                        @include font(#81807E, 18px, 400);
                         font-family: Roboto-Mono;
 
                     }
 
-                    .point{
+                    .point {
                         width: 4px;
                         height: 4px;
                         background-color: #4D4D4D;
                         border-radius: 2px;
                     }
 
-                    span{
-                        @include font( #CCCCCC, 20px, 500);
+                    span {
+                        @include font(#CCCCCC, 20px, 500);
                         font-family: Roboto-Mono;
                     }
 
@@ -142,372 +142,255 @@
 }
 
 
-@media (max-width: 1440px){
-    .collections{
-        &-items{
+@media (max-width: 1440px) {
+    .collections {
 
-            &-item{
-                padding: 20px;
-                width: 382px;
 
-                .thing{
+        &__item {
+            padding: 20px;
+            width: 382px;
+
+            .thing {
                 width: 386px;
                 height: 291;
-                margin-bottom: 30px ;
+                margin-bottom: 30px;
             }
 
-            .item-nav{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
+            .item-nav {
 
-                .nav-p{
+                .nav-p {
                     @include font(#B3B3B2, 16px, 400);
-                    font-family: Roboto;
-                    padding: 10px 16px;
-                    border: 2px dashed #262626;
-                    border-radius: 100px;
-                    background-color: #262626;
                 }
 
-                button{
-                    display: flex;
-                    gap: 4px;
-                    background-color: #0F0F0F;
-                    border: 2px dashed #333333;
-                    border-radius: 12px;
-                    padding: 18px 24px;
+                button {
 
-                    p{
+                    p {
                         @include font(#ffffff, 16px, 400);
-                        font-family: Roboto;
                     }
                 }
             }
 
-            .item-text{
+            .item__text {
 
-                h3{
+                h3 {
                     @include font(#ffffff, 20px, 500);
-                    font-family: Roboto-Mono;
-                    margin-bottom: 14px;
                 }
 
-                &-description{
-                  display: flex;
-                  gap: 20px;
+                &-description {
 
-                    .text1{
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
+                    .text1 {
 
-                        p{
-                            @include font( #81807E, 16px, 400);
-                            font-family: Roboto-Mono;
+                        p {
+                            @include font(#81807E, 16px, 400);
 
                         }
 
-                        .point{
-                            width: 4px;
-                            height: 4px;
-                            background-color: #4D4D4D;
-                            border-radius: 2px;
-                            }
 
-                    
-                        span{
-                            @include font( #CCCCCC, 16px, 500);
-                            font-family: Roboto-Mono;
+                        span {
+                            @include font(#CCCCCC, 16px, 500);
+
                         }
 
                     }
 
                 }
-            }
             }
         }
+
     }
 }
 
 
 @media (max-width: 1024px) {
 
-    .collections{
-        &-content{
-        padding-left: 80px;
-        border: 2px dashed #262626;
-        border-radius: 20px 20px 0px 0px;
+    .collections {
 
+            &__text {
 
-        &-text{
+                h2 {
+                    @include font(#ffffff, 30px, 500);
+                }
 
-            h2{
-                @include font( #ffffff, 30px, 500);
-                font-family: Roboto;
-                text-transform: uppercase;
-                margin: 80px 0px 30px 0px;
+                .p {
+                    @include font(#676665, 14px, 400);
+
+                }
             }
 
-            .p{
-                @include font(#676665, 14px, 400);
-                font-family: Roboto;
-                margin-bottom: 50px;
-            }
+                &__menu {
 
-            .collection-menu{
-                display: flex;
-                gap: 14px;
 
-               .button{
-                    background-color: #0F0F0F;
-                    border: 2px dashed #333333;
-                    border-radius: 12px;
-                    padding: 18px 24px;
+                    .button {
 
-                    p{
-                        @include font(#B3B3B2, 14px, 400);
-                        font-family: Roboto;
+                        p {
+                            @include font(#B3B3B2, 14px, 400);
+
+                        }
                     }
-               }
 
-               .button--dif{
-                    background-color: #C2B4A3;
-                    border: 2px #C2B4A3;
-                    padding: 18px 30px;
+                    .button--dif {
 
-                    p{
-                        @include font(#0F0F0F, 14px, 400);
+                        p {
+                            @include font(#0F0F0F, 14px, 400);
+                        }
                     }
-               }
-            }
-        }
-    }
+                }
+            
+        
 
-        &-items{
+        &__items {
             grid: 1fr 1fr / 1fr 1fr;
-            &-item{
+        }
+
+            &__item {
                 padding: 20px;
                 width: 388px;
 
-                .thing{
-                width: 386px;
-                height: 291;
-                margin-bottom: 30px ;
-            }
-
-            .item-nav{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-
-                .nav-p{
-                    @include font(#B3B3B2, 14px, 400);
-                    font-family: Roboto;
-                    padding: 10px 16px;
-                    border: 2px dashed #262626;
-                    border-radius: 100px;
-                    background-color: #262626;
+                .thing {
+                    width: 386px;
+                    height: 291;
+                    margin-bottom: 30px;
                 }
 
-                button{
-                    display: flex;
-                    gap: 4px;
-                    background-color: #0F0F0F;
-                    border: 2px dashed #333333;
-                    border-radius: 12px;
-                    padding: 18px 24px;
+                .item-nav {
 
-                    p{
-                        @include font(#ffffff, 14px, 400);
-                        font-family: Roboto;
+                    .nav-p {
+                        @include font(#B3B3B2, 14px, 400);
+                    }
+
+                    button {
+
+                        p {
+                            @include font(#ffffff, 14px, 400);
+                        }
                     }
                 }
-            }
 
-            .item-text{
+                .item__text {
 
-                h3{
-                    @include font(#ffffff, 18px, 500);
-                    font-family: Roboto-Mono;
-                    margin-bottom: 14px;
-                }
+                    h3 {
+                        @include font(#ffffff, 18px, 500);
+                    }
 
-                &-description{
-                  display: flex;
-                  gap: 20px;
+                    &-description {
 
-                    .text1{
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
+                        .text1 {
 
-                        p{
-                            @include font( #81807E, 14px, 400);
-                            font-family: Roboto-Mono;
+                            p {
+                                @include font(#81807E, 14px, 400);
 
-                        }
-
-                        .point{
-                            width: 4px;
-                            height: 4px;
-                            background-color: #4D4D4D;
-                            border-radius: 2px;
                             }
 
-                    
-                        span{
-                            @include font( #CCCCCC, 14px, 500);
-                            font-family: Roboto-Mono;
+
+                            span {
+                                @include font(#CCCCCC, 14px, 500);
+                            }
+
                         }
 
                     }
-
                 }
             }
-            }
-        }
+        
     }
 }
 
 @media (max-width: 390px) {
 
-    .collections{
-        &-content{
-        padding-left: 20px;
-        border: 2px dashed #262626;
-        border-radius: 20px 20px 0px 0px;
-
-
-        &-text{
-
-            h2{
-                @include font( #ffffff, 24px, 500);
-                font-family: Roboto;
-                text-transform: uppercase;
-                margin: 80px 0px 30px 0px;
-            }
-
-            .p{
-                @include font(#676665, 14px, 400);
-                font-family: Roboto;
-                margin-bottom: 50px;
-            }
-
-            .collection-menu{
-                display: flex;
-                gap: 14px;
-
-               .button{
-                    background-color: #0F0F0F;
-                    border: 2px dashed #333333;
-                    border-radius: 12px;
-                    padding: 18px 24px;
-
-                    p{
-                        @include font(#B3B3B2, 14px, 400);
-                        font-family: Roboto;
-                    }
-               }
-
-               .button--dif{
-                    background-color: #C2B4A3;
-                    border: 2px #C2B4A3;
-                    padding: 18px 30px;
-
-                    p{
-                        @include font(#0F0F0F, 14px, 400);
-                    }
-               }
-            }
+    .collections {
+        &__content {
+            padding: 30px 20px;
         }
-    }
 
-        &-items{
+
+            &__text {
+
+                h2 {
+                    margin: 0;
+                    margin-bottom: 20px;
+                    @include font(#ffffff, 24px, 500);
+                }
+
+                .p {
+                    @include font(#676665, 14px, 400);
+
+                }
+            }
+
+                &__menu {
+
+                    .button {
+
+                        p {
+                            @include font(#B3B3B2, 14px, 400);
+                        }
+                    }
+
+                    .button--dif {
+
+                        p {
+                            @include font(#0F0F0F, 14px, 400);
+                        }
+                    }
+                }
+
+                &__img{
+                    display: none;
+                }
+            
+        
+
+        &__items {
             grid: 1fr 1fr / 1fr;
-            &-item{
+        }
+
+            &__item {
                 padding: 20px;
                 width: 320px;
 
-                .thing{
-                width: 318px;
-                height: 291;
-                margin-bottom: 30px ;
-            }
-
-            .item-nav{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-
-                .nav-p{
-                    @include font(#B3B3B2, 14px, 400);
-                    font-family: Roboto;
-                    padding: 10px 16px;
-                    border: 2px dashed #262626;
-                    border-radius: 100px;
-                    background-color: #262626;
+                .thing {
+                    width: 318px;
+                    height: 291;
+                    margin-bottom: 30px;
                 }
 
-                button{
-                    display: flex;
-                    gap: 4px;
-                    background-color: #0F0F0F;
-                    border: 2px dashed #333333;
-                    border-radius: 12px;
-                    padding: 18px 24px;
+                .item-nav {
 
-                    p{
-                        @include font(#ffffff, 14px, 400);
-                        font-family: Roboto;
+                    .nav-p {
+                        @include font(#B3B3B2, 14px, 400);
+                    }
+
+                    button {
+
+                        p {
+                            @include font(#ffffff, 14px, 400);
+                        }
                     }
                 }
-            }
 
-            .item-text{
+                .item__text {
 
-                h3{
-                    @include font(#ffffff, 16px, 500);
-                    font-family: Roboto-Mono;
-                    margin-bottom: 14px;
-                }
+                    h3 {
+                        @include font(#ffffff, 16px, 500);
+                    }
 
-                &-description{
-                  display: flex;
-                  gap: 20px;
+                    &-description {
 
-                    .text1{
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
+                        .text1 {
 
-                        p{
-                            @include font( #81807E, 14px, 400);
-                            font-family: Roboto-Mono;
-
-                        }
-
-                        .point{
-                            width: 4px;
-                            height: 4px;
-                            background-color: #4D4D4D;
-                            border-radius: 2px;
+                            p {
+                                @include font(#81807E, 14px, 400);
                             }
 
-                    
-                        span{
-                            @include font( #CCCCCC, 14px, 500);
-                            font-family: Roboto-Mono;
+
+                            span {
+                                @include font(#CCCCCC, 14px, 500);
+                            }
+
                         }
 
                     }
-
                 }
             }
-            }
-        }
     }
 }

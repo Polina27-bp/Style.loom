@@ -50,6 +50,12 @@ a {
 @import './blocks/_baner';
 @import './blocks/_footer';
 
+@media (max-width: 1440px) {
+    .container{
+        width: 1500px;
+        margin: 0 auto;
+    }
+}
 
 @media (max-width: 1440px) {
     .container{

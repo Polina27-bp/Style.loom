@@ -174,28 +174,15 @@
 @media (max-width: 1440px) {
     .footer {
 
-        &-logo {
-            padding: 100px 0 100px 0;
+        &__logo {
 
             .big-logo {
                 width: 788px;
                 height: 146px;
             }
-
-            &-socials {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-
-                .socials-social {
-                    padding: 16px;
-                    background-color: #D6CDC2;
-                    border-radius: 12px;
-                }
-            }
         }
 
-        &-nav {
+        &__nav {
             padding-top: 100px;
             padding-bottom: 100px;
 
@@ -203,26 +190,12 @@
 
                 h4 {
                     @include font(#FFFFFF, 18px, 500);
-                    font-family: Roboto;
-                    margin-bottom: 30px;
                 }
 
                 &-p {
-                    display: flex;
-                    align-items: center;
-                    gap: 16px;
 
                     p {
                         @include font(#676665, 16px, 400);
-                        font-family: Roboto-Mono;
-                    }
-
-                    .point {
-                        width: 4px;
-                        height: 4px;
-                        background-color: #262626;
-                        border-radius: 2px;
-
                     }
                 }
             }
@@ -231,8 +204,6 @@
 
                 h4 {
                     @include font(#FFFFFF, 18px, 500);
-                    font-family: Roboto;
-                    margin-bottom: 30px;
                 }
 
             }
@@ -241,53 +212,22 @@
 
                 label {
                     @include font(#FFFFFF, 18px, 500);
-                    font-family: Roboto;
                 }
 
                 button {
-                    margin-top: 30px;
-                    width: 479px;
-                    padding: 18px 24px;
-                    border: 0px;
-                    border-radius: 12px;
-                    background-color: #1A1A1A;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
 
                     input {
                         @include font(#676665, 16px, 400);
-                        font-family: Roboto-Mono;
-                        background-color: #1A1A1A;
-                        border: 0px;
                     }
                 }
             }
         }
 
-        &-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px 0;
+        &__info {
 
             p {
                 @include font(#81807E, 16px, 400);
-                font-family: Roboto-Mono;
             }
-
-            &-policy {
-                display: flex;
-                align-items: center;
-                gap: 11px;
-
-                .line {
-                    width: 1px;
-                    height: 27px;
-                    background-color: #262626;
-                }
-            }
-
         }
 
     }
@@ -297,28 +237,16 @@
 
     .footer {
 
-        &-logo {
+        &__logo {
             padding: 100px 0 100px 0;
 
             .big-logo {
                 width: 500px;
                 height: 146px;
             }
-
-            &-socials {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-
-                .socials-social {
-                    padding: 16px;
-                    background-color: #D6CDC2;
-                    border-radius: 12px;
-                }
-            }
         }
 
-        &-nav {
+        &__nav {
             padding-top: 100px;
             padding-bottom: 100px;
 
@@ -326,26 +254,12 @@
 
                 h4 {
                     @include font(#FFFFFF, 16px, 500);
-                    font-family: Roboto;
-                    margin-bottom: 30px;
                 }
 
                 &-p {
-                    display: flex;
-                    align-items: center;
-                    gap: 16px;
 
                     p {
                         @include font(#676665, 14px, 400);
-                        font-family: Roboto-Mono;
-                    }
-
-                    .point {
-                        width: 4px;
-                        height: 4px;
-                        background-color: #262626;
-                        border-radius: 2px;
-
                     }
                 }
             }
@@ -354,8 +268,6 @@
 
                 h4 {
                     @include font(#FFFFFF, 16px, 500);
-                    font-family: Roboto;
-                    margin-bottom: 30px;
                 }
 
             }
@@ -364,62 +276,148 @@
 
                 label {
                     @include font(#FFFFFF, 16px, 500);
-                    font-family: Roboto;
                 }
 
                 button {
                     margin-top: 30px;
                     width: 350px;
-                    padding: 18px 24px;
-                    border: 0px;
-                    border-radius: 12px;
-                    background-color: #1A1A1A;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
 
                     input {
                         @include font(#676665, 14px, 400);
-                        font-family: Roboto-Mono;
-                        background-color: #1A1A1A;
-                        border: 0px;
                     }
                 }
             }
         }
 
-        &-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        &__info {
             padding: 50px 0;
 
             p {
                 @include font(#81807E, 14px, 400);
-                font-family: Roboto-Mono;
             }
 
-            &-policy {
-                display: flex;
-                align-items: center;
-                gap: 11px;
+        }
+    }
+}
 
-                .line {
-                    width: 1px;
-                    height: 27px;
-                    background-color: #262626;
+@media (max-width: 390px) {
+    .footer {
+        &__running-line-wrapper {
+            padding: 30px 0;
+        }
+
+
+        &__running-line p {
+            @include font(#333333, 20px, 400);
+        }
+
+        &__logo {
+
+            padding: 50px 0;
+
+            &-content {
+                display: flex;
+                flex-wrap: wrap;
+
+                .big-logo {
+                    width: 357px;
+                    height: 66px;
+                    margin-bottom: 30px;
                 }
             }
 
         }
 
-    }
-}
+        &__nav {
+            padding: 50px 0;
 
-@media (max-width: 390px) {
+            &-content {
+                display: flex;
+                flex-wrap: wrap;
 
-    .container {
-        width: 358px;
-        margin: 0 auto;
+                .home {
+                    margin-bottom: 30px;
+
+                    h4 {
+                        @include font(#FFFFFF, 16px, 500);
+                        font-family: Roboto;
+                        margin-bottom: 30px;
+                    }
+
+                    &-p {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        p {
+                            @include font(#676665, 14px, 400);
+                            font-family: Roboto-Mono;
+                        }
+
+                        .point {
+                            width: 4px;
+                            height: 4px;
+                            background-color: #262626;
+                            border-radius: 2px;
+
+                        }
+                    }
+                }
+
+                .products {
+                    margin-bottom: 30px;
+
+                    h4 {
+                        @include font(#FFFFFF, 16px, 500);
+                        font-family: Roboto;
+                        margin-bottom: 30px;
+                    }
+
+                }
+
+                form {
+
+                    label {
+                        @include font(#FFFFFF, 16px, 500);
+                    }
+
+                    button {
+                        margin-top: 30px;
+                        width: 358px;
+                        padding: 18px 24px;
+                        border: 0px;
+
+                        input {
+                            @include font(#676665, 14px, 400);
+                            font-family: Roboto-Mono;
+                            background-color: #1A1A1A;
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__info {
+            padding: 50px 0;
+
+            &-content {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                p {
+                    @include font(#81807E, 14px, 400);
+                    font-family: Roboto-Mono;
+                }
+            }
+
+            &-policy {
+                gap: 10px;
+
+            }
+
+
+        }
     }
 }

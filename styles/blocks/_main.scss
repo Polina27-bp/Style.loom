@@ -100,6 +100,100 @@
     }
 }
 
+@media (max-width: 1690px) {
+    .main {
+        &__baner {
+            button {
+                p {
+                    @include font(#FFFFFF, 17px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        &__menu {
+            .button {
+                p {
+                    @include font(#B3B3B2, 17px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        h1 {
+            @include font(#FFFFFF, 38px, 500);
+            font-family: Roboto;
+        }
+
+        p {
+            @include font(#676665, 17px, 400);
+            font-family: Roboto;
+        }
+
+        &__result {
+            &-item {
+                h2 {
+                    @include font(#FFFFFF, 34px, 500);
+                    font-family: Roboto;
+                }
+
+                p {
+                    @include font(#676665, 17px, 400);
+                    font-family: Roboto;
+                }
+            }
+
+
+        }
+    }
+}
+@media (max-width: 1690px) {
+    .main {
+        &__baner {
+            button {
+                p {
+                    @include font(#FFFFFF, 16px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        &__menu {
+            .button {
+                p {
+                    @include font(#B3B3B2, 16px, 400);
+                    font-family: Roboto;
+                }
+            }
+        }
+
+        h1 {
+            @include font(#FFFFFF, 38px, 500);
+            font-family: Roboto;
+        }
+
+        p {
+            @include font(#676665, 16px, 400);
+            font-family: Roboto;
+        }
+
+        &__result {
+            &-item {
+                h2 {
+                    @include font(#FFFFFF, 34px, 500);
+                    font-family: Roboto;
+                }
+
+                p {
+                    @include font(#676665, 16px, 400);
+                    font-family: Roboto;
+                }
+            }
+
+
+        }
+    }
+}
 
 @media (max-width: 1440px) {
     .main {
@@ -218,6 +312,7 @@
 
             button {
                 padding: 10px 20px;
+                bottom: -20px;
 
                 p {
                     @include font(#FFFFFF, 14px, 400);

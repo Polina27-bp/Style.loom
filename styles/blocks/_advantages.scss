@@ -1,7 +1,7 @@
-.advantages{
+.advantages {
     margin-bottom: 100px;
 
-    &__content{
+    &__content {
         padding: 0px 0px 0px 80px;
         border: 2px dashed #262626;
         border-radius: 20px 20px 0px 0px;
@@ -9,53 +9,53 @@
         justify-content: space-between;
     }
 
-    &__text{
-             
-        h2{
-            @include font( #FFFFFF, 48px, 500);
+    &__text {
+
+        h2 {
+            @include font(#FFFFFF, 48px, 500);
             font-family: Roboto;
             text-transform: uppercase;
             margin: 80px 0px 30px 0px;
 
         }
 
-        p{
+        p {
             @include font(#676665, 18px, 400);
             font-family: Roboto;
         }
     }
 
-    &__img{
-            border-radius: 20px;
+    &__img {
+        border-radius: 20px;
     }
 
-    &__steps{
-        
+    &__steps {
+
         border: 2px dashed #262626;
         border-radius: 0 0 20px 20px;
         display: flex;
     }
 
-    &__step{
+    &__step {
         width: 399px;
         border-right: 2px dashed #262626;
         border-bottom: 2px dashed #262626;
         padding: 50px;
 
-        h6{
+        h6 {
             @include font(#676665, 20px, 400);
             font-family: Roboto-Mono;
             margin-bottom: 30px;
         }
 
-        h3{
-            @include font( #FFFFFF, 28px, 500);
+        h3 {
+            @include font(#FFFFFF, 28px, 500);
             font-family: Roboto;
             margin-bottom: 16px;
         }
 
-        p{
-            @include font( #676665, 18px, 400);
+        p {
+            @include font(#676665, 18px, 400);
             font-family: Roboto;
         }
     }
@@ -64,130 +64,103 @@
 
 
 @media (max-width: 1440px) {
-    .advantages{
-    margin-bottom: 100px;
+    .advantages {
+        margin-bottom: 100px;
 
-    &-content{
-        padding: 0px 0px 0px 60px;
-        &-text{
-             
-            h2{
-                @include font( #FFFFFF, 38px, 500);
-                font-family: Roboto;
-                text-transform: uppercase;
-                margin: 80px 0px 30px 0px;
+        &__content {
+            padding: 0px 0px 0px 60px;
+        }
 
+        &__text {
+
+            h2 {
+                @include font(#FFFFFF, 38px, 500);
             }
 
-            p{
+            p {
                 @include font(#676665, 16px, 400);
-                font-family: Roboto;
+
             }
         }
 
-        img{
+        &__img {
             width: 281px;
             height: 273px;
             border-radius: 20px;
         }
-    }
 
-    &-steps{
-        
-        border: 2px dashed #262626;
-        border-radius: 0 0 20px 20px;
-        display: flex;
-        
 
-        .advantages-step{
-            width: 399px;
-            border-right: 2px dashed #262626;
-            border-bottom: 2px dashed #262626;
-            padding: 50px;
+        &__step {
 
-            h6{
+            h6 {
                 @include font(#676665, 18px, 400);
-                font-family: Roboto-Mono;
-                margin-bottom: 30px;
+
             }
 
-            h3{
-                @include font( #FFFFFF, 22px, 500);
-                font-family: Roboto;
-                margin-bottom: 16px;
+            h3 {
+                @include font(#FFFFFF, 22px, 500);
             }
 
-            p{
-                @include font( #676665, 16px, 400);
-                font-family: Roboto;
+            p {
+                @include font(#676665, 16px, 400);
             }
         }
+
     }
-}
 }
 
 
 @media (max-width: 390px) {
-     .advantages{
-    margin-bottom: 100px;
+    .advantages {
 
-    &-content{
-        padding: 0px 0px 0px 60px;
-        &-text{
-             
-            h2{
-                @include font( #FFFFFF, 28px, 500);
-                font-family: Roboto;
-                text-transform: uppercase;
-                margin: 80px 0px 30px 0px;
+        &__content {
+            padding: 30px 20px;
+        }
 
+        &__text {
+
+            h2 {
+                margin: 0;
+                @include font(#FFFFFF, 28px, 500);
             }
 
-            p{
+            p {
                 @include font(#676665, 14px, 400);
-                font-family: Roboto;
             }
         }
 
-        img{
-            width: 281px;
-            height: 273px;
-            border-radius: 20px;
+        &__img {
+            display: none;
+
         }
-    }
 
-    &-steps{
-        
-        border: 2px dashed #262626;
-        border-radius: 0 0 20px 20px;
-        display: flex;
-        flex-wrap: wrap;
-        
+        &__steps {
 
-        .advantages-step{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        &__step {
             width: 358px;
-            border-right: 2px dashed #262626;
-            border-bottom: 2px dashed #262626;
-            padding: 50px;
 
-            h6{
+
+            h6 {
                 @include font(#676665, 16px, 400);
-                font-family: Roboto-Mono;
-                margin-bottom: 30px;
+
             }
 
-            h3{
-                @include font( #FFFFFF, 20px, 500);
-                font-family: Roboto;
-                margin-bottom: 16px;
+            h3 {
+                @include font(#FFFFFF, 20px, 500);
+
             }
 
-            p{
-                @include font( #676665, 14px, 400);
-                font-family: Roboto;
+            p {
+                @include font(#676665, 14px, 400);
+
             }
         }
+
     }
-}
-    
+
 }
