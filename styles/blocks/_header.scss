@@ -24,10 +24,7 @@
                     background-color: #1A1A1A;
                     border-radius: 12px;
                     border: 0px;
-
-                    p {
-                        @include font(#FFFFFF, 18px, 400);
-                    }
+                    @include font(#FFFFFF, 18px, 400);
                 }
 
                 .button-products {
@@ -35,10 +32,7 @@
                     padding: 18px 24px;
                     border: 1px dashed #262626;
                     border-radius: 12px;
-
-                    p {
-                        @include font(#B3B3B2, 18px, 400);
-                    }
+                    @include font(#B3B3B2, 18px, 400);
                 }
             }
 
@@ -70,11 +64,8 @@
                     background-color: #AE9B84;
                     border: 0px;
                     border-radius: 12px;
-
-                    p {
-                        font-family: Roboto;
-                        @include font(#0F0F0F, 18px, 500);
-                    }
+                    font-family: Roboto;
+                    @include font(#0F0F0F, 18px, 500);
                 }
             }
         }

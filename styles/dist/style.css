@@ -57,8 +57,6 @@ a {
   background-color: #1A1A1A;
   border-radius: 12px;
   border: 0px;
-}
-.header .container .navbar .menu .button-home p {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
@@ -68,8 +66,6 @@ a {
   padding: 18px 24px;
   border: 1px dashed #262626;
   border-radius: 12px;
-}
-.header .container .navbar .menu .button-products p {
   color: #B3B3B2;
   font-size: 18px;
   font-weight: 400;
@@ -96,8 +92,6 @@ a {
   background-color: #AE9B84;
   border: 0px;
   border-radius: 12px;
-}
-.header .container .navbar .navigation .contact p {
   font-family: Roboto;
   color: #0F0F0F;
   font-size: 18px;
@@ -194,8 +188,6 @@ a {
   border-radius: 12px;
   position: absolute;
   bottom: -40px;
-}
-.main__baner button p {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
@@ -223,8 +215,6 @@ a {
   border: 2px dashed #333333;
   border-radius: 12px;
   padding: 18px 24px;
-}
-.main__menu .button p {
   color: #B3B3B2;
   font-size: 18px;
   font-weight: 400;
