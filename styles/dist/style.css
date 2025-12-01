@@ -816,8 +816,6 @@ a {
   border: 2px dashed #333333;
   border-radius: 12px;
   padding: 18px 24px;
-}
-.collections__menu .button p {
   color: #B3B3B2;
   font-size: 18px;
   font-weight: 400;
@@ -827,8 +825,6 @@ a {
   background-color: #C2B4A3;
   border: 2px #C2B4A3;
   padding: 18px 30px;
-}
-.collections__menu .button--dif p {
   color: #0F0F0F;
   font-size: 18px;
   font-weight: 400;
@@ -870,8 +866,6 @@ a {
   border: 2px dashed #333333;
   border-radius: 12px;
   padding: 18px 24px;
-}
-.collections__item .item-nav button p {
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
@@ -1281,8 +1275,6 @@ a {
   border: 2px dashed #333333;
   border-radius: 12px;
   padding: 18px 24px;
-}
-.questions__menu .button p {
   color: #B3B3B2;
   font-size: 18px;
   font-weight: 400;
@@ -1292,8 +1284,6 @@ a {
   background-color: #C2B4A3;
   border: 2px #C2B4A3;
   padding: 18px 30px;
-}
-.questions__menu .button--dif p {
   color: #0F0F0F;
   font-size: 18px;
   font-weight: 400;
@@ -1507,8 +1497,6 @@ a {
   display: flex;
   align-items: center;
   gap: 4px;
-}
-.baner__button p {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
