@@ -95,17 +95,16 @@
 
                 .button {
 
-                    p {
+                  
                         @include font(#B3B3B2, 16px, 400);
 
-                    }
+                
                 }
 
                 .button--dif {
 
-                    p {
                         @include font(#0F0F0F, 16px, 400);
-                    }
+                  
                 }
             }
         }
@@ -146,16 +145,15 @@
         &__menu {
 
             .button {
-                p {
+   
                     @include font(#B3B3B2, 14px, 400);
-                }
+            
             }
 
             .button--dif {
 
-                p {
                     @include font(#0F0F0F, 14px, 400);
-                }
+                
             }
         }
 
@@ -211,22 +209,17 @@
             border: 2px dashed #333333;
             border-radius: 12px;
             padding: 14px 20px;
-       
-
-            p {
                 @include font(#B3B3B2, 14px, 400);
                 font-family: Roboto-Mono;
-            }
+            
         }
 
         .button--dif {
             background-color: #C2B4A3;
             border: 2px #C2B4A3;
             padding: 14px 20px;
-
-            p {
                 @include font(#0F0F0F, 14px, 400);
-            }
+            
         }
     }
 

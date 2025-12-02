@@ -98,16 +98,16 @@
 
                 .button-home {
 
-                    p {
-                        @include font(#FFFFFF, 16px, 400);
-                    }
+
+                    @include font(#FFFFFF, 16px, 400);
+
                 }
 
                 .button-products {
 
-                    p {
-                        @include font(#B3B3B2, 16px, 400);
-                    }
+
+                    @include font(#B3B3B2, 16px, 400);
+
                 }
             }
 
@@ -123,9 +123,8 @@
 
                 .contact {
 
-                    p {
-                        @include font(#0F0F0F, 16px, 500);
-                    }
+                    @include font(#0F0F0F, 16px, 500);
+
                 }
             }
 
@@ -144,7 +143,7 @@
         padding: 30px 14px;
 
         .navbar {
-            
+
             .menu {
                 .button-home {
                     display: none;
@@ -164,11 +163,11 @@
             }
 
             .navigation {
-                .basket{
-                display: none;
+                .basket {
+                    display: none;
                 }
 
-                .contact{
+                .contact {
                     display: none;
                 }
             }
@@ -179,6 +178,7 @@
         .line-h {
             display: none;
         }
+
         .line-v {
             display: none;
         }

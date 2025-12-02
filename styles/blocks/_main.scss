@@ -100,19 +100,19 @@
     .main {
         &__baner {
             button {
-                p {
+              
                     @include font(#FFFFFF, 17px, 400);
                     font-family: Roboto;
-                }
+                
             }
         }
 
         &__menu {
             .button {
-                p {
+         
                     @include font(#B3B3B2, 17px, 400);
                     font-family: Roboto;
-                }
+                
             }
         }
 
@@ -147,19 +147,19 @@
     .main {
         &__baner {
             button {
-                p {
+              
                     @include font(#FFFFFF, 16px, 400);
                     font-family: Roboto;
-                }
+                
             }
         }
 
         &__menu {
             .button {
-                p {
+      
                     @include font(#B3B3B2, 16px, 400);
                     font-family: Roboto;
-                }
+             
             }
         }
 
@@ -195,19 +195,19 @@
     .main {
         &__baner {
             button {
-                p {
+         
                     @include font(#FFFFFF, 16px, 400);
                     font-family: Roboto;
-                }
+           
             }
         }
 
         &__menu {
             .button {
-                p {
+   
                     @include font(#B3B3B2, 16px, 400);
                     font-family: Roboto;
-                }
+                
             }
         }
 
@@ -246,10 +246,10 @@
     .main {
         &__baner {
             button {
-                p {
+         
                     @include font(#FFFFFF, 16px, 400);
                     font-family: Roboto;
-                }
+            
             }
         }
 
@@ -259,10 +259,10 @@
 
         &__menu {
             .button {
-                p {
+             
                     @include font(#B3B3B2, 14px, 400);
                     font-family: Roboto;
-                }
+           
             }
         }
 
@@ -309,11 +309,9 @@
             button {
                 padding: 10px 20px;
                 bottom: -20px;
-
-                p {
                     @include font(#FFFFFF, 14px, 400);
                     font-family: Roboto;
-                }
+            
             }
         }
 
@@ -331,11 +329,9 @@
 
             .button {
                 padding: 12px 18px;
-
-                p {
                     @include font(#B3B3B2, 14px, 400);
                     font-family: Roboto;
-                }
+       
 
                 .row {
                     width: 13px;

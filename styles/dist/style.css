@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -115,12 +116,12 @@ a {
   .header {
     padding: 30px 14px;
   }
-  .header .navbar .menu .button-home p {
+  .header .navbar .menu .button-home {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
   }
-  .header .navbar .menu .button-products p {
+  .header .navbar .menu .button-products {
     color: #B3B3B2;
     font-size: 16px;
     font-weight: 400;
@@ -129,7 +130,7 @@ a {
     width: 151px;
     height: 28px;
   }
-  .header .navbar .navigation .contact p {
+  .header .navbar .navigation .contact {
     color: #0F0F0F;
     font-size: 16px;
     font-weight: 500;
@@ -260,13 +261,13 @@ a {
 }
 
 @media (max-width: 1690px) {
-  .main__baner button p {
+  .main__baner button {
     color: #FFFFFF;
     font-size: 17px;
     font-weight: 400;
     font-family: Roboto;
   }
-  .main__menu .button p {
+  .main__menu .button {
     color: #B3B3B2;
     font-size: 17px;
     font-weight: 400;
@@ -298,13 +299,13 @@ a {
   }
 }
 @media (max-width: 1690px) {
-  .main__baner button p {
+  .main__baner button {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
     font-family: Roboto;
   }
-  .main__menu .button p {
+  .main__menu .button {
     color: #B3B3B2;
     font-size: 16px;
     font-weight: 400;
@@ -336,13 +337,13 @@ a {
   }
 }
 @media (max-width: 1440px) {
-  .main__baner button p {
+  .main__baner button {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
     font-family: Roboto;
   }
-  .main__menu .button p {
+  .main__menu .button {
     color: #B3B3B2;
     font-size: 16px;
     font-weight: 400;
@@ -374,7 +375,7 @@ a {
   }
 }
 @media (max-width: 1024px) {
-  .main__baner button p {
+  .main__baner button {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
@@ -383,7 +384,7 @@ a {
   .main__text {
     padding: 80px 30px 30px 30px;
   }
-  .main__menu .button p {
+  .main__menu .button {
     color: #B3B3B2;
     font-size: 14px;
     font-weight: 400;
@@ -425,8 +426,6 @@ a {
   .main__baner button {
     padding: 10px 20px;
     bottom: -20px;
-  }
-  .main__baner button p {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
@@ -442,8 +441,6 @@ a {
   }
   .main__menu .button {
     padding: 12px 18px;
-  }
-  .main__menu .button p {
     color: #B3B3B2;
     font-size: 14px;
     font-weight: 400;
@@ -921,7 +918,7 @@ a {
     font-size: 16px;
     font-weight: 400;
   }
-  .collections__item .item-nav button p {
+  .collections__item .item-nav button {
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
@@ -953,12 +950,12 @@ a {
     font-size: 14px;
     font-weight: 400;
   }
-  .collections__menu .button p {
+  .collections__menu .button {
     color: #B3B3B2;
     font-size: 14px;
     font-weight: 400;
   }
-  .collections__menu .button--dif p {
+  .collections__menu .button--dif {
     color: #0F0F0F;
     font-size: 14px;
     font-weight: 400;
@@ -980,7 +977,7 @@ a {
     font-size: 14px;
     font-weight: 400;
   }
-  .collections__item .item-nav button p {
+  .collections__item .item-nav button {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
@@ -1017,12 +1014,12 @@ a {
     font-size: 14px;
     font-weight: 400;
   }
-  .collections__menu .button p {
+  .collections__menu .button {
     color: #B3B3B2;
     font-size: 14px;
     font-weight: 400;
   }
-  .collections__menu .button--dif p {
+  .collections__menu .button--dif {
     color: #0F0F0F;
     font-size: 14px;
     font-weight: 400;
@@ -1047,7 +1044,7 @@ a {
     font-size: 14px;
     font-weight: 400;
   }
-  .collections__item .item-nav button p {
+  .collections__item .item-nav button {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
@@ -1327,12 +1324,12 @@ a {
     font-size: 16px;
     font-weight: 400;
   }
-  .questions__text__menu .button p {
+  .questions__text__menu .button {
     color: #B3B3B2;
     font-size: 16px;
     font-weight: 400;
   }
-  .questions__text__menu .button--dif p {
+  .questions__text__menu .button--dif {
     color: #0F0F0F;
     font-size: 16px;
     font-weight: 400;
@@ -1365,12 +1362,12 @@ a {
     font-size: 14px;
     font-weight: 400;
   }
-  .questions__menu .button p {
+  .questions__menu .button {
     color: #B3B3B2;
     font-size: 14px;
     font-weight: 400;
   }
-  .questions__menu .button--dif p {
+  .questions__menu .button--dif {
     color: #0F0F0F;
     font-size: 14px;
     font-weight: 400;
@@ -1421,8 +1418,6 @@ a {
     border: 2px dashed #333333;
     border-radius: 12px;
     padding: 14px 20px;
-  }
-  .questions__menu .button p {
     color: #B3B3B2;
     font-size: 14px;
     font-weight: 400;
@@ -1432,8 +1427,6 @@ a {
     background-color: #C2B4A3;
     border: 2px #C2B4A3;
     padding: 14px 20px;
-  }
-  .questions__menu .button--dif p {
     color: #0F0F0F;
     font-size: 14px;
     font-weight: 400;
@@ -1518,7 +1511,7 @@ a {
     font-size: 16px;
     font-weight: 400;
   }
-  .baner__button p {
+  .baner__button {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
@@ -1539,7 +1532,7 @@ a {
     font-size: 12px;
     font-weight: 400;
   }
-  .baner__button p {
+  .baner__button {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
@@ -1566,8 +1559,6 @@ a {
   }
   .baner__button {
     padding: 14px 100px;
-  }
-  .baner__button p {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
@@ -1911,7 +1902,7 @@ a {
 @media (max-width: 1440px) {
   .container {
     width: 1500px;
-    margin: 0 auto;
+    margin: 0 autoж;
   }
 }
 @media (max-width: 1440px) {
